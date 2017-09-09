@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.epam.training.sportsbetting</groupId>
+  <artifactId>sports-betting-application</artifactId>
+  <version>0.1.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+ 
+  <modules>
+    <module>sports-betting-application-domain</module>
+    <module>sports-betting-application-app</module>
+  </modules>
+  
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+    <distributionManagement>
+
+	  	<repository>
+			<id>nexus-local</id>
+			<url>http://192.168.33.10:8081/nexus/content/repositories/sportsapp-release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-local</id>
+			<url>http://192.168.33.10:8081/nexus/content/repositories/sportsapp-SNAPSHOT/</url>
+		</snapshotRepository>
+	  
+  </distributionManagement>
+  
+</project>
