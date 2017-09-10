@@ -41,14 +41,4 @@
 	  
   </distributionManagement>
   
-  <servers>
-  
-	<server>
-      <id>nexus-local</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-	
-  </servers>
-  
 </project>
